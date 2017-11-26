@@ -1,0 +1,13 @@
+<a>Publish Blog</a>
+<app-publishblog></app-publishblog>
+<br><br>
+<ul class="collection">
+  <li class="collection-item avatar" *ngFor="let blog of jsonBlogs">
+    <span class="title"><b>{{blog?.title}}</b> - {{blog?.author}}</span>
+    <br><i>{{blog?.category}}</i>
+    <p>
+      {{blog?.content}}
+    </p>
+    <a href="#!" class="secondary-content">Like</a>
+  </li>
+</ul>
